@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Willezone.Azure.WebJobs.Extensions.AzureKeyVault</RootNamespace>
+    <AssemblyName>Willezone.Azure.WebJobs.Extensions.AzureKeyVault</AssemblyName>
+    <Authors>Boris Wilhelms</Authors>
+    <Company>Boris Wilhelms</Company>
+    <Description>This package contains extensions for Azure KeyVault.</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Azure WebJobs AzureFunctions AzureKeyVault</PackageTags>
+    <RepositoryUrl>https://github.com/BorisWilhelms/azure-function-keyvault</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/BorisWilhelms/azure-function-keyvault</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/BorisWilhelms/azure-function-keyvault/blob/master/LICENSE</PackageLicenseUrl>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="2.1.0" />
+  </ItemGroup>
+</Project>
