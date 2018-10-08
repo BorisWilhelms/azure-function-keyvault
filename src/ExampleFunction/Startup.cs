@@ -14,8 +14,8 @@ namespace ExampleFunction
         {
             var tempProvider = builder.Services.BuildServiceProvider();
             var config = tempProvider.GetRequiredService<IConfiguration>();
-            //var credentials = new ClientCredentials(config["AzureKeyVault_ClientId"], config["AzureKeyVault_ClientSecret"]);
-            builder.AddKeyVault(config["AzureKeyVault_Uri"]);
+            builder.AddAzureKeyVault(config["AzureKeyVault_Uri"]);
+            //builder.AddAzureKeyVault(config["AzureKeyVault_Uri"], config["AzureKeyVault_ClientId"], config["AzureKeyVault_ClientSecret"]);
         }
     }
 }
